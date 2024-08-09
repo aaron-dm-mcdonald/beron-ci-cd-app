@@ -16,7 +16,7 @@ PV's in context with GKE: https://devopscube.com/persistent-volume-google-kubern
 Theo's Documentation: https://docs.google.com/document/d/1whVdpWic21cgoSkyMRdFnS72AZtlHPV8/edit?pli=1
 
 ## Clone Repo
-git clone https://github.com/aaron-dm-mcdonald/OSS-grafana-k8s-cluster.git
+- `git clone https://github.com/aaron-dm-mcdonald/OSS-grafana-k8s-cluster.git`
 
 open directory in terminal or VS Code
 
@@ -33,7 +33,7 @@ open directory in terminal or VS Code
 
 1) ensure gcloud is initalized 
 2) Deploy Terraform infrastructure 
-3) Ensure local-exec connects to cluster
+3) Ensure local-exec connects to cluster (check terminal for terraform console output)
 
 4) (optional) Verify connectivity:
    - `kubectl cluster-info`
