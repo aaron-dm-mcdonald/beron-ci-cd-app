@@ -16,3 +16,4 @@ resource "google_service_account_iam_member" "service-a" {
   role               = "roles/iam.workloadIdentityUser"
   member             = "serviceAccount:${var.project}.svc.id.goog[staging/service-a]"
 }
+ 

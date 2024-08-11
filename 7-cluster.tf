@@ -1,6 +1,6 @@
 resource "google_container_cluster" "primary" {
   name                     = "primary"
-  location                 = "us-central1-a"
+  location                 = var.zone
   remove_default_node_pool = true
   initial_node_count       = 2
   network                  = google_compute_network.cluster-vpc.self_link
