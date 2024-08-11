@@ -37,13 +37,18 @@ open directory in terminal or VS Code
 
 4) (optional) Verify connectivity:
    - `kubectl cluster-info`
-5) Create namespace:
+5) (optional, if you don't have a namespace YAML)
+   Create namespace:
    - `kubectl create namespace my-grafana`
-6) Verify namespace:
+   Verify namespace:
    - `kubectl get namespace my-grafana`
 
 7) **Configure Grafana**
-   - `kubectl apply -f grafana/ --namespace=my-grafana`
-   - `kubectl get all --namespace=my-grafana`
+   - `kubectl apply -f <YAMLS>`
+   OR (if you arent using namespace metadata keys in your YAML) 
+   - `kubectl apply -f grafana/ --namespace=my-grafana
+   
+ 8)  Check resource status 
+    - `kubectl get all --namespace=my-grafana`
 
 8) await for external IP on loadbalancer service. Append port 3000 to IP to open UI in web browser. 
